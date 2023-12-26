@@ -4,13 +4,14 @@ import axios from "axios";
 
 function App() {
   const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
-  const key = "b45b7aa3cd526e81a9d5d7ee9bb76f86";
+  
+  const [key,setKey] = useState(import.meta.env.VITE_API_KEY);
+
   const [weathers, setWeathers] = useState(null);
   const [loading, setLoading] = useState(true);
   const [city, setCity] = useState("São Paulo");
 
   const ref = useRef(null);
-
   useEffect(() => {
     const params = {
       q: city,
@@ -24,7 +25,7 @@ function App() {
     });
 
     console.log(weathers);
-  }, [city]);
+  }, [city,key]);
 
   function searchTemp(e) {
     e.preventDefault();
