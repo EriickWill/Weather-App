@@ -1,0 +1,66 @@
+main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.295),rgba(0, 0, 0, 0.205)),url("../public/img.jpg")center center/cover;
+}
+.container-clima{
+  background: rgba(0, 0, 0, 0.226);
+  border-radius: 2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  width: 500px;
+  height: 600px;
+
+  padding: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.container-clima form{
+  display: flex;
+  gap: 10px;
+}
+.container-clima input{
+  width: 250px;
+  height: 40px;
+  padding-inline:20px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgba(255, 255, 255, 0.384);
+  color: white;
+  outline: none;
+}
+.container-clima button{
+  background: #d8d8d8;
+  color: white;
+  width: 100px;
+  border:none;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgb(39, 39, 39);
+}
+.weather-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  color:rgb(228, 225, 225);
+  text-align: center;
+}
+.weather-container h1{
+  font-size: 20px;
+}
+.weather-container span{
+  font-size: 150px;
+  font-weight: 700;
+  display:flex;
+}
